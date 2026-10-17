@@ -31,15 +31,25 @@ A modern, responsive, and seamless multi-page web platform designed for **Ghoroy
 ```text
 ghoroya-v2/
 ├── public/
+│   ├── icons.svg
 │   ├── logoGhoroya.png
 │   ├── screen1.png
 │   ├── screen2.png
-│   ├── screen3.png
-│   └── founder.jpg
+│   └── screen3.png
 ├── src/
-│   ├── App.jsx           # Main routing & component architecture
-│   ├── main.jsx          # Application entry point
-│   └── index.css         # Tailwind CSS imports
+│   ├── assets/
+│   ├── pages/
+│   │   ├── AboutPage.jsx
+│   │   ├── Home.jsx
+│   │   └── PrivacyPolicyPage.jsx
+│   ├── App.css
+│   ├── App.jsx           # Main router & navigation container
+│   ├── index.css         # Tailwind CSS entry
+│   └── main.jsx          # Application entry point
+├── eslint.config.js
+├── index.html
 ├── package.json
+├── postcss.config.js
+├── tailwind.config.js
 ├── vite.config.js
 └── README.md
