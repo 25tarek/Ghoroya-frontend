@@ -1,16 +1,45 @@
-# React + Vite
+# 🏠 Ghoroya - Multi-Page Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and seamless multi-page web platform designed for **Ghoroya** (Ghoroya Foods, Arts & Crafts, and Expert Services). Built with **React**, **Tailwind CSS**, and **React Router**, this project showcases a decoupled client-demonstration architecture featuring full multi-page navigation and smooth cross-page hash routing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Key Features
 
-## React Compiler
+*   **📱 Fully Responsive UI:** Tailored layout for all screen sizes, including desktop navigation and a mobile drawer (hamburger menu).
+*   **🚦 Multi-Page Routing:** Powered by `react-router-dom` with dedicated pages for:
+    *   **Homepage (`/`):** Hero section, 1-hour delivery badges, Core Services, Interactive App Showcase, and Rider/Merchant Join section.
+    *   **About Us Page (`/about`):** Detailed story, Founder & CEO profile (**Abdur Rahim**), vision, and mission.
+    *   **Privacy Policy Page (`/privacy-policy`):** Transparent user data protection and policy details.
+*   **🔗 Seamless Cross-Page Navigation:** Custom `NavHashLink` component allowing users on any sub-page to click navbar section anchors (`#features`, `#app-showcase`, `#rider-merchant`) and automatically route to the Homepage while smoothly scrolling to the target section.
+*   **🌐 Dual Language Support:** Instant toggling between **Bangla (বাংলা)** and **English**.
+*   **🖼️ Interactive Showcase:** Dynamic 3D-styled app interface gallery with live preview switching.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack & Dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **Frontend Framework:** [React](https://react.dev/) (via [Vite](https://vitejs.dev/))
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Routing:** `react-router-dom`
+*   **Icons:** `lucide-react`
+
+---
+
+## 📂 Project Structure
+
+```text
+ghoroya-v2/
+├── public/
+│   ├── logoGhoroya.png
+│   ├── screen1.png
+│   ├── screen2.png
+│   ├── screen3.png
+│   └── founder.jpg
+├── src/
+│   ├── App.jsx           # Main routing & component architecture
+│   ├── main.jsx          # Application entry point
+│   └── index.css         # Tailwind CSS imports
+├── package.json
+├── vite.config.js
+└── README.md
